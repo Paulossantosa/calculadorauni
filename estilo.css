@@ -1,0 +1,109 @@
+/* Fundo futurista */
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
+
+
+/* Caixa principal */
+
+.calculadora {
+    background: rgba(20, 20, 40, 0.95);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+    width: 320px;
+    text-align: center;
+}
+
+.calculadora h1 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px cyan;
+}
+
+
+/* Display */
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 1.6em;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: #0ff;
+    box-shadow: inset 0 0 10px #0ff;
+}
+
+
+/* Grid de botões */
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+/* Botões padrão */
+
+button {
+    height: 60px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #0ff;
+    color: #111;
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    transform: scale(1.05);
+}
+
+
+/* Botões especiais */
+
+.btn-op {
+    background: linear-gradient(145deg, #ff512f, #dd2476);
+    box-shadow: 0 0 15px rgba(255, 50, 100, 0.7);
+}
+
+.btn-op:hover {
+    box-shadow: 0 0 25px #ff2d95, 0 0 50px #ff2d95;
+}
+
+.btn-func {
+    background: linear-gradient(145deg, #ffcc00, #ff9900);
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-func:hover {
+    box-shadow: 0 0 25px #ffb300, 0 0 50px #ffb300;
+}
+
+.btn-eq {
+    background: linear-gradient(145deg, #00ff87, #00b894);
+    grid-row: span 2;
+}
+
+.zero {
+    grid-column: span 2;
+}
